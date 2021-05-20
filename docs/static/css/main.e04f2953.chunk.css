@@ -1,2 +1,170 @@
-:root{--titulo:"Yusei Magic",sans-serif;--texto:"Bubblegum Sans",cursive}*{margin:0;padding:0;box-sizing:border-box}body{background:#00416a;background:linear-gradient(180deg,rgba(228,229,230,.2),rgba(0,65,106,.89)),url(/static/media/pexels.e3806f99.jpeg);background-size:cover;background-attachment:fixed;background-repeat:no-repeat;width:100%;height:100vh;font-family:"Bubblegum Sans",cursive;font-family:var(--texto)}h1,h2,h3,h4,h5,h6{font-family:"Yusei Magic",sans-serif;font-family:var(--titulo);padding:1rem 0;text-align:center;text-transform:uppercase;letter-spacing:.5rem}h1{font-size:1.5rem}h2{font-size:1.2rem}.clima{color:#fff;width:100%}.clima__formulario{width:80%;margin:0 auto}.clima__clima{width:80%;margin:4rem auto}@media screen and (min-width:768px){body{font-size:17px;background:#00416a;background:linear-gradient(180deg,rgba(228,229,230,.1),rgba(0,65,106,.89)),url(/static/media/pexels2.7b336f7b.jpeg);background-attachment:fixed;background-size:cover;background-repeat:no-repeat}p{letter-spacing:.1rem}.clima__clima,.clima__formulario{width:50%}h1{font-size:1.8rem}h2{font-size:1.4rem}}@media screen and (min-width:992px){.clima__clima,.clima__formulario{width:40%}h1{font-size:2rem}h2{font-size:1.6rem}}.lds-hourglass{display:block;position:relative;margin:5rem auto;width:80px;height:80px}.lds-hourglass:after{content:" ";display:block;border-radius:50%;width:0;height:0;margin:8px;box-sizing:border-box;border-color:#ffc107 transparent;border-style:solid;border-width:32px;-webkit-animation:lds-hourglass 1.2s infinite;animation:lds-hourglass 1.2s infinite}@-webkit-keyframes lds-hourglass{0%{-webkit-transform:rotate(0);transform:rotate(0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}50%{-webkit-transform:rotate(900deg);transform:rotate(900deg);-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}to{-webkit-transform:rotate(5turn);transform:rotate(5turn)}}@keyframes lds-hourglass{0%{-webkit-transform:rotate(0);transform:rotate(0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}50%{-webkit-transform:rotate(900deg);transform:rotate(900deg);-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}to{-webkit-transform:rotate(5turn);transform:rotate(5turn)}}
+:root {
+    --titulo: "Yusei Magic", sans-serif;
+    --texto: "Bubblegum Sans", cursive
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: #00416a;
+    background: linear-gradient(180deg, rgba(228, 229, 230, .2), rgba(0, 65, 106, .89)), url(./static/media/pexels.e3806f99.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: "Bubblegum Sans", cursive;
+    font-family: var(--texto)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Yusei Magic", sans-serif;
+    font-family: var(--titulo);
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5rem
+}
+
+h1 {
+    font-size: 1.5rem
+}
+
+h2 {
+    font-size: 1.2rem
+}
+
+.clima {
+    color: #fff;
+    width: 100%
+}
+
+.clima__formulario {
+    width: 80%;
+    margin: 0 auto
+}
+
+.clima__clima {
+    width: 80%;
+    margin: 4rem auto
+}
+
+@media screen and (min-width:768px) {
+    body {
+        font-size: 17px;
+        background: #00416a;
+        background: linear-gradient(180deg, rgba(228, 229, 230, .1), rgba(0, 65, 106, .89)), url(./static/media/pexels2.7b336f7b.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    p {
+        letter-spacing: .1rem
+    }
+
+    .clima__clima,
+    .clima__formulario {
+        width: 50%
+    }
+
+    h1 {
+        font-size: 1.8rem
+    }
+
+    h2 {
+        font-size: 1.4rem
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .clima__clima,
+    .clima__formulario {
+        width: 40%
+    }
+
+    h1 {
+        font-size: 2rem
+    }
+
+    h2 {
+        font-size: 1.6rem
+    }
+}
+
+.lds-hourglass {
+    display: block;
+    position: relative;
+    margin: 5rem auto;
+    width: 80px;
+    height: 80px
+}
+
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border-color: #ffc107 transparent;
+    border-style: solid;
+    border-width: 32px;
+    -webkit-animation: lds-hourglass 1.2s infinite;
+    animation: lds-hourglass 1.2s infinite
+}
+
+@-webkit-keyframes lds-hourglass {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        -webkit-animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+
+    50% {
+        -webkit-transform: rotate(900deg);
+        transform: rotate(900deg);
+        -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    to {
+        -webkit-transform: rotate(5turn);
+        transform: rotate(5turn)
+    }
+}
+
+@keyframes lds-hourglass {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        -webkit-animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+        animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+    }
+
+    50% {
+        -webkit-transform: rotate(900deg);
+        transform: rotate(900deg);
+        -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+
+    to {
+        -webkit-transform: rotate(5turn);
+        transform: rotate(5turn)
+    }
+}
+
 /*# sourceMappingURL=main.e04f2953.chunk.css.map */
